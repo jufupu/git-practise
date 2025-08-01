@@ -1,0 +1,8 @@
+# Todays Learning - git basics
+
+git init - this creates a new git repository in your current directory. this adds a hidden git folder that can be used to track changes.
+git clone - this clones a git repository from one place to another, for exmaple make a repo on github and then use the CLI to clone it to your local machine 
+git status - this command allows me to track the status of the current repository to see things like untracked new files, modified files and staged files. (files that are staged and ready to be committed) 
+git add - this command is used to add a file to staging, you would use 'git add <file_name.txt>' or 'git .add' to add all modified files to staging.
+git commit - this git commit command saves the changes you have made (or staged) to the local repository. Each time you run git commit, Git creates a snapshot of your repository at that point. This allows you to roll back to a previous commit whenever needed.'git commit -m "commit_message"'
+git push - The git push command syncs your remote repository with the local repository. Once you run this command, the remote repository will reflect all the changes you committed locally.
