@@ -6,3 +6,61 @@ git status - this command allows me to track the status of the current repositor
 git add - this command is used to add a file to staging, you would use 'git add <file_name.txt>' or 'git .add' to add all modified files to staging.
 git commit - this git commit command saves the changes you have made (or staged) to the local repository. Each time you run git commit, Git creates a snapshot of your repository at that point. This allows you to roll back to a previous commit whenever needed.'git commit -m "commit_message"'
 git push - The git push command syncs your remote repository with the local repository. Once you run this command, the remote repository will reflect all the changes you committed locally.
+git log - this allows you to see a log of what has been committed to the repo. very useful. 
+
+
+# Git Commit Message Guide
+
+Follow these steps to write clear, consistent, and helpful commit messages.
+
+---
+
+## 1. Structure of a Commit Message
+
+
+<type>(optional scope): short summary
+
+[optional body]
+
+2. Types of Commits (Use Conventional Commits)
+
+feat - New feature
+fix - Bug fix
+docs - Documentation changes only
+style - Code formatting, no logic changes
+refactor - Code cleanup, no behavior change
+test - Adding or editing tests
+chore - Non-code tasks (e.g., tooling, CI)
+
+3. Writing the Subject Line
+Do:
+
+- Use imperative mood (e.g., “Add feature” not “Added feature”)
+- Limit to 50 characters
+- Capitalize the first word
+- Omit the period at the end
+
+Don't:
+
+- Use past tense
+- Write vague messages like “update stuff”
+- Combine unrelated changes in one commit
+
+4. When to Add a Body
+Include a detailed body if:
+You need to explain why the change was made
+The change isn’t obvious from the code
+You’re fixing a tricky bug or edge case
+
+Body formatting:
+Leave one blank line after the subject line
+
+Wrap lines at 72 characters
+
+
+Example message in editor:
+
+EXAMPLE 
+feat(dashboard): add monthly sales chart
+
+Uses Chart.js to visualize monthly sales. Pulls data from /api/stats.

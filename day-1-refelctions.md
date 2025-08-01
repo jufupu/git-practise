@@ -6,4 +6,5 @@
 - I understand git add to add all modified or single files to staging
 - I understand git commit to commit these files to local repo, and the importance of a good commit message
 - I undestand git push to push that commit to the remote repo.
+- I understand git log to look at a log of what has been committed.
 - 
