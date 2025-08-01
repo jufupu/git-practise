@@ -7,6 +7,10 @@ git add - this command is used to add a file to staging, you would use 'git add 
 git commit - this git commit command saves the changes you have made (or staged) to the local repository. Each time you run git commit, Git creates a snapshot of your repository at that point. This allows you to roll back to a previous commit whenever needed.'git commit -m "commit_message"'
 git push - The git push command syncs your remote repository with the local repository. Once you run this command, the remote repository will reflect all the changes you committed locally.
 git log - this allows you to see a log of what has been committed to the repo. very useful. 
+this is how you add a github to a existing repo in your local machine, once you init the repo, make a repo on github and then use this to connect the two
+git remote add origin https://github.com/jufupu/engineering-dairy.git
+git branch -M main
+git push -u origin main
 
 
 # Git Commit Message Guide
